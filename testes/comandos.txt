@@ -1,0 +1,7 @@
+go test -cover: Mostra a porcentagem de código coberto por teste
+
+go test -coverprofile=resultado.out: Gera um arquivo com detalhes de porcentagem de código testado
+
+go tool cover -func=resultado.out: Abre o arquivo gerado
+
+go tool cover -html=resultado.out: Gera html estratificar tudo que foi testado
